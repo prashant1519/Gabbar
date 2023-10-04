@@ -6,7 +6,7 @@
 // git push -u origin main
 
 // git remote add origin https://github.com/prashant1519/Gabbar.git
-// git branch -M main
+// git commit -m "first commit"
 // git push -u origin main
 
 // palandom
@@ -68,21 +68,57 @@
 //   return true;
 // }
 
-let arr = "azxxzy";
+// let arr = "azxxzy";
+// let s = 0;
+// let e = arr.length - 1;
+// let str = "";
+
+// function ss(arr, str) {
+//   while (s < e) {
+//     if (str[str.length - 1] == arr[s]) {
+//       str.slice(str[0], str.length - 1);
+//     } else {
+//       str = arr[s];
+//     }
+//     s++;
+//   }
+//   return str;
+// }
+
+// let r = ss(arr, str);
+// console.log(r);
+//
+
+//check palindrom only one removal allowed
+let str = "abca";
 let s = 0;
-let e = arr.length - 1;
-let str = "";
-function ss(arr, str) {
+let e = str.length - 1;
+function pa(str, s, e) {
   while (s < e) {
-    if (str[str.length - 1] == arr[s]) {
-      str.slice(str.length - 1, arr[s]);
+    if (str[s] == str[e]) {
+      s++;
+      e--;
     } else {
-      str = arr[s];
+      let ans = check(str, s + 1, e);
+      let ans1 = check(str, s, e - 1);
+
+      return ans || ans1;
     }
-    s++;
   }
-  return str;
+  return true;
 }
 
-let r = ss(arr, str);
+function check(str) {
+  while (s <= e) {
+    if (str[s] != str[e]) {
+      return false;
+    } else {
+      s++;
+      e--;
+    }
+  }
+  return true;
+}
+
+let r = pa(str);
 console.log(r);
