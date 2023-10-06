@@ -90,35 +90,66 @@
 //
 
 //check palindrom only one removal allowed
-let str = "abca";
-let s = 0;
-let e = str.length - 1;
-function pa(str, s, e) {
-  while (s < e) {
-    if (str[s] == str[e]) {
-      s++;
-      e--;
-    } else {
-      let ans = check(str, s + 1, e);
-      let ans1 = check(str, s, e - 1);
+// let str = "marewam";
+// let s = 0;
+// let e = str.length - 1;
+// function pa(str, s, e) {
+//   while (s < e) {
+//     if (str[s] == str[e]) {
+//       s++;
+//       e--;
+//     } else {
+//       let ans = check(str, s + 1, e);
+//       let ans1 = check(str, s, e - 1);
 
-      return ans || ans1;
-    }
+//       return ans || ans1;
+//     }
+//   }
+//   return true;
+// }
+
+// function check(str) {
+//   while (s <= e) {
+//     if (str[s] != str[e]) {
+//       return false;
+//     } else {
+//       s++;
+//       e--;
+//     }
+//   }
+//   return true;
+// }
+
+// let r = pa(str);
+// console.log(r);
+
+//calulate pan substring
+
+let str = "aaa";
+let i = 0;
+let j = str.length - 1;
+
+function outer(str, i, j) {
+  let count = 0;
+  while (i >= 0 && j < str.length && str[i] == str[j]) {
+    count++;
+    i++;
+    j--;
   }
-  return true;
+  return count;
+}
+let w = outer(str, i, j);
+console.log(w);
+
+function run(str) {
+  let total = 0;
+  for (let i = 0; i < str.length; i++) {
+    let odd = outer(str, i, i);
+    let even = outer(str, i, i + 1);
+    total = total + odd + even;
+  }
+  return total;
 }
 
-function check(str) {
-  while (s <= e) {
-    if (str[s] != str[e]) {
-      return false;
-    } else {
-      s++;
-      e--;
-    }
-  }
-  return true;
-}
-
-let r = pa(str);
-console.log(r);
+// let r = run(str, i, j);
+// console.log(r);
