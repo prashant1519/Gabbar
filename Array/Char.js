@@ -125,31 +125,39 @@
 
 //calulate pan substring
 
-let str = "aaa";
-let i = 0;
-let j = str.length - 1;
+// let str = "aaa";
+// let i = 0;
+// let j = str.length - 1;
 
-function outer(str, i, j) {
-  let count = 0;
-  while (i >= 0 && j < str.length && str[i] == str[j]) {
-    count++;
-    i++;
-    j--;
-  }
-  return count;
-}
-let w = outer(str, i, j);
-console.log(w);
+// function outer(str, i, j) {
+//   let count = 0;
+//   while (i >= 0 && j < str.length && str[i] == str[j]) {
+//     count++;
+//     i++;
+//     j--;
+//   }
+//   return count;
+// }
+// let w = outer(str, i, j);
+// console.log(w);
 
-function run(str) {
-  let total = 0;
-  for (let i = 0; i < str.length; i++) {
-    let odd = outer(str, i, i);
-    let even = outer(str, i, i + 1);
-    total = total + odd + even;
-  }
-  return total;
-}
+// function run(str) {
+//   let total = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     let odd = outer(str, i, i);
+//     let even = outer(str, i, i + 1);
+//     total = total + odd + even;
+//   }
+//   return total;
+// }
 
 // let r = run(str, i, j);
 // console.log(r);
+
+let f = "a";
+let array = 8;
+for (let i = 0; i < array.length; i++) {
+  // const element = array[i];
+  f++;
+  console.log(f);
+}

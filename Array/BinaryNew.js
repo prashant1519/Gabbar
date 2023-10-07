@@ -187,6 +187,7 @@
 // console.log(f);
 
 let arr = [20, 10, 30, 50, 40, 70, 60];
+let arr = [20, 10, 30, 50, 40, 70, 60];
 
 function bb(arr, target) {
   let s = 0;
