@@ -154,10 +154,24 @@
 // let r = run(str, i, j);
 // console.log(r);
 
-let f = "a";
-let array = 8;
-for (let i = 0; i < array.length; i++) {
-  // const element = array[i];
-  f++;
-  console.log(f);
+// let arr = ["abc", "deq", "mee", "aqq", "ded", "ccc"];
+// let pattern = "abb";
+
+// for (let i = 0; i < arr.length; i++) {
+//   var count = 0;
+//   for (let j = 0; j < arr[i].length; j++) {
+//     if (arr[i][j] != arr[i][j] && arr[i][j] == arr[i][j]) {
+//       console.log(arr[i]);
+//     }
+//     // console.log(arr[i][j]);
+//   }
+// }
+// console.log(count);
+// console.log(count);
+
+let arr = [12, 13, 14, 15, 16];
+function ss(arr) {
+  console.log(arr.length);
 }
+ss(arr);
+console.log(arr.length);
