@@ -17,13 +17,25 @@
 
 // print from 1 to n
 
+// function z(n) {
+//   if (n == 0) {
+//     return;
+//   }
+
+//   z(n - 1);
+//   console.log(n);
+// }
+
+// let f = z(10);
+// console.log(f);
+
 function z(n) {
   if (n == 0) {
-    return;
+    return 1;
   }
 
-  z(n - 1);
-  console.log(n);
+  let d = 2 * z(n - 1);
+  return d;
 }
 
 let f = z(10);
