@@ -61,14 +61,14 @@
 // let d = c(7);
 // console.log(d);
 
-function z(n) {
-  if (n == 0) {
-    return 0;
-  }
+// function z(n) {
+//   if (n == 0) {
+//     return 0;
+//   }
 
-  let r = n + z(n - 1);
-  return r;
-}
+//   let r = n + z(n - 1);
+//   return r;
+// }
 
-let f = z(5);
-console.log(f);
+// let f = z(5);
+// console.log(f);
