@@ -12,3 +12,6 @@ function x(n) {
 
 let f = x(5);
 console.log(f);
+
+let i = x(5);
+console.log(f);
