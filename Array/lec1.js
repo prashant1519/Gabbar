@@ -1,4 +1,5 @@
 // let arr = [1, 2, 3, 4, 4, 4, 4, 4, 4, 5, 6, 7];
+// let arr = [1, 2, 3, 4, 4, 4, 4, 4, 4, 5, 6, 7];
 // let s = 0;
 // let e = arr.length - 1;
 // let mid = Math.floor((s + e) / 2);
