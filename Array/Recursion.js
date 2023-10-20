@@ -72,3 +72,50 @@
 
 // let f = z(5);
 // console.log(f);
+
+// let arr = [10, 20, 30, 40, 50];
+// function sd(arr, i, length) {
+//   if (i >= length) {
+//     return;
+//   }
+
+//   console.log(arr[i]);
+
+//   let r = sd(arr, i + 1, length);
+//   return r;
+// }
+
+// let cx = sd(arr, 0, 5);
+// console.log(cx);
+
+// climbing ladder
+// function aq(n) {
+//   if (n == 1) {
+//     return 1;
+//   }
+
+//   if (n == 2) {
+//     return 2;
+//   }
+
+//   let d = aq(n - 1) + aq(n - 2);
+//   return d;
+// }
+
+// let f = aq(5);
+// console.log(f);
+
+//printing array
+let arr = [10, 20, 30, 40, 50];
+function aq(n, size, i) {
+  if (i >= size) {
+    return;
+  }
+
+  console.log(n[i]);
+  let g = aq(n, size, i + 1);
+  return g;
+}
+
+let f = aq(arr, 5, 0);
+console.log(f);
